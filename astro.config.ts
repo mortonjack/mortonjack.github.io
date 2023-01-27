@@ -7,38 +7,29 @@ import image from "@astrojs/image";
 import astroLayouts from "astro-layouts";
 
 // https://astro.build/config
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://nofuss.lanceross.xyz",
   base: "/",
   markdown: {
     shikiConfig: {
-      theme: "dracula",
-    },
+      theme: "dracula"
+    }
   },
-  integrations: [
-    compress({
-      css: true,
-      html: true,
-      js: true,
-      img: true,
-      svg: true,
-      logger: 0,
-    }),
-    tailwind(),
-    sitemap(),
-    mdx({
-      remarkPlugins: [
-        [
-          astroLayouts,
-          {
-            default: "@layouts/Layout.astro",
-            "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro",
-          },
-        ],
-      ],
-    }),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-    }),
-  ],
+  integrations: [compress({
+    css: true,
+    html: true,
+    js: true,
+    img: true,
+    svg: true,
+    logger: 0
+  }), tailwind(), sitemap(), mdx({
+    remarkPlugins: [[astroLayouts, {
+      default: "@layouts/Layout.astro",
+      "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro"
+    }]]
+  }), image({
+    serviceEntryPoint: "@astrojs/image/sharp"
+  })]
 });
