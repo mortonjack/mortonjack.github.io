@@ -4,9 +4,10 @@ description: "My first blog post."
 pubDate: January 27, 2023
 ---
 import BlogImage from "@components/BlogImage.astro"
-import Dog from "@images/jules-beagle-unsplash.jpg"
 import Chess from "@images/chess.png"
 import Checkmate from "@images/checkmate.png"
+import SudokuPhone from "@images/sudoku_phone.png"
+import SudokuSmall from "@images/sudoku_small_16x9.png"
 
 This is my first blog post on this new website. Hooray! Why not spend this time to introduce you to myself? 
 
@@ -26,7 +27,7 @@ the idea got me thinking, _how in the world are sudoku boards generated??_ That'
 really drove me. 
 
 {/* Add an image of the game here! */}
-<BlogImage src={Dog} alt="Beagle Dog by Jules D. on Unsplash" />
+<BlogImage src={SudokuSmall} alt="Screenshot of my Sudoku Android App, showing a game-in-progress." />
 {/* Currently, my custom component for images only supports 16:9 aspect ratio or else it will squish the image. */}
 
 I might write up a blog post explaining my process later, but the short version is this: use a fast solving algorithm to generate a complete board. 
