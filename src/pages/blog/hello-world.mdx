@@ -1,0 +1,50 @@
+---
+title: Hello, World!
+description: "My first blog post."
+pubDate: January 27, 2023
+---
+import BlogImage from "@components/BlogImage.astro"
+import Chess from "@images/chess.png"
+import Checkmate from "@images/checkmate.png"
+import SudokuPhone from "@images/sudoku_phone.png"
+import SudokuSmall from "@images/sudoku_small_16x9.png"
+
+This is my first blog post on this new website. Hooray! Why not spend this time to introduce you to myself? 
+
+I'm Jack, I'm a 20yo non-binary computer science student from Adelaide. I'll be using this blog to post updates about projects I'm working on and
+competitions I'm participating in. 
+Currently, I'm working on my [sudoku android app](https://github.com/mortonjack/sudoku 'Sudoku Repo'), and learning a lot through Ravi's Study Program. 
+In the near future, I'll be part of the Queue Crew at [UNIHACK 2023](unihack.net/ 'UNIHACK'), and Log(Q) for [Ready Trader Go](https://readytradergo.optiver.com/ 'Ready Trader Go') (hoping our team is accepted!)
+
+
+---
+
+## Sudoku
+Sometimes, I find myself obsessing over sudoku, pulling out it out on my phone whenever I get the chance. But most sudoku apps lock important features
+behind paywalls, such as the ability to auto-fill cells with notes at the start of a game, and they leave out others entirely. If I created my own app,
+I could make it exactly how I want it. But is it really worth that much effort, just because of a few minor inconveniences? Well, maybe not alone. But
+the idea got me thinking, _how in the world are sudoku boards generated??_ That's surely one of the most important parts of a sudoku app! It's this that
+really drove me. 
+
+{/* Add an image of the game here! */}
+<BlogImage src={SudokuSmall} alt="Screenshot of my Sudoku Android App, showing a game-in-progress." />
+{/* Currently, my custom component for images only supports 16:9 aspect ratio or else it will squish the image. */}
+
+I might write up a blog post explaining my process later, but the short version is this: use a fast solving algorithm to generate a complete board. 
+Then, randomly remove tiles, and use the same solving algorithm to ensure that at each point, only 1 solution exists. My current process is very fast,
+and I'm judging difficulty based on the amount of tiles given at the start of the board, but I wish to improve this. I'm not convinced that the
+amount of tiles remaining is a great indicator of difficulty, so I'm working on an improved system to create better games. That's where my project is
+for now. [Check it out on GitHub](https://github.com/mortonjack/sudoku 'Sudoku Repo') to follow development!
+
+---
+
+## Chess
+The project I'm most proud of is definitely the chess game I made with two of my friends. I put a lot of work into it, mainly developing the back-end. 
+The highlights are the check & mate detection, draw detection (fifty move rule, stalemate, etc), saving & loading, and our automated testing setup. We used a
+test-driven development process, which definitely paid off with all of the finicky little moves chess allows or disallows. I had no idea how complicated
+Chess was before I started working on this project, but we wanted to implement every rule, so we did. Yes, including en passant. If you want to check it out
+for yourself, [follow the instructions here](https://github.com/mortonjack/chess-oop 'Chess Repo').
+
+<BlogImage src={Checkmate} alt="Screenshot of our chess game's GUI" />
+
+---
