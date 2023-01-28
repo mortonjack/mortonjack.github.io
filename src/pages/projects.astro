@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import BlogCard from "@components/BlogCard.astro";
+import ProjectCard from "@components/ProjectCard.astro";
 interface Frontmatter {
   title: string;
   pubDate: string;
@@ -22,7 +22,7 @@ projects = projects.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - n
   </section>
   <section>
     <ul>
-      {projects.map((post) => <BlogCard title={post.frontmatter.title} description={post.frontmatter.description} pubDate={post.frontmatter.pubDate} url={post.url} />)}
+      {projects.map((post) => <ProjectCard title={post.frontmatter.title} description={post.frontmatter.description} pubDate={post.frontmatter.pubDate} url={post.url} />)}
     </ul>
   </section>
 </Layout>
