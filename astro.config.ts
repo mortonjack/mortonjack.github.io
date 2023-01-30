@@ -10,8 +10,8 @@ import astroLayouts from "astro-layouts";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://nofuss.lanceross.xyz",
-  base: "/",
+  site: "https://mortonjack.github.io",
+  base: "/portfolio-website-i",
   markdown: {
     shikiConfig: {
       theme: "dracula"
