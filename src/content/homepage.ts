@@ -22,6 +22,6 @@ export const homepage = [
     solve each day's puzzle the day they came out, giving me an 8 hour time limit. I learnt a lot \
     about various data structures, algorithms, and optimisation techniques.",
     icon: "ph:asterisk-simple",
-    link: "blog"
+    link: "blog/aoc-2022"
   },
 ];
