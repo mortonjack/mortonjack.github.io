@@ -14,7 +14,7 @@ export const homepage = [
     one valid solution. It also contains quality-of-life features such as cell \
     highlighting and note auto-clear.",
     icon: "ic:sharp-grid-on",
-    link: "projects"
+    link: "projects/Sudoku"
   },
   {
     title: "Advent of Code 2022 (C++)",

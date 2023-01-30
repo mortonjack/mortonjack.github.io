@@ -25,9 +25,7 @@ I could make it exactly how I want it. But is it really worth that much effort, 
 the idea got me thinking, _how in the world are sudoku boards generated??_ That's surely one of the most important parts of a sudoku app! It's this that
 really drove me. 
 
-{/* Add an image of the game here! */}
 <BlogImage src={SudokuSmall} alt="Screenshot of my Sudoku Android App, showing a game-in-progress." />
-{/* Currently, my custom component for images only supports 16:9 aspect ratio or else it will squish the image. */}
 
 I might write up a blog post explaining my process later, but the short version is this: use a fast solving algorithm to generate a complete board. 
 Then, randomly remove tiles, and use the same solving algorithm to ensure that at each point, only 1 solution exists. My current process is very fast,

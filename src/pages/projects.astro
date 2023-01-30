@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import ProjectCard from "@components/ProjectCard.astro";
 interface Frontmatter {
   title: string;
+  sortDate: string;
   pubDate: string;
   description: string;
 }
@@ -12,7 +13,7 @@ const metadata = {
 };
 
 let projects = await Astro.glob<Frontmatter>("./projects/*.mdx");
-projects = projects.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+projects = projects.sort((a, b) => new Date(b.frontmatter.sortDate).valueOf() - new Date(a.frontmatter.sortDate).valueOf());
 ---
 
 <Layout {...metadata}>
