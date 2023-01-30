@@ -27,7 +27,8 @@ export default defineConfig({
   }), tailwind(), sitemap(), mdx({
     remarkPlugins: [[astroLayouts, {
       default: "@layouts/Layout.astro",
-      "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro"
+      "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro",
+      "pages/projects/**/*.mdx": "@layouts/BlogLayout.astro"
     }]]
   }), image({
     serviceEntryPoint: "@astrojs/image/sharp"

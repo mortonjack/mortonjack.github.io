@@ -1,0 +1,39 @@
+--- 
+title: Chess
+description: "A two-player chess game developed in C++ with SFML"
+pubDate: September 2022 - October 2022
+sortDate: October 1, 2022
+---
+import BlogImage from "@components/BlogImage.astro"
+import ChessSetup from "@images/chess_initial_setup.png"
+import ChessGame from "@images/chess_in_progress.png"
+import Checkmate from "@images/chess_checkmate.png"
+
+This project involved working in a team of three to develop a two-player chess game on desktop using C++ and [SFML](https://www.sfml-dev.org/index.php).
+Our goal was to create a chess game which followed all standard chess rules, with an intuitive UI and seamless user experience. We used a test-driven
+development process to ensure each component worked properly both on its own, and integrated with other moving parts. We developed with expansion in mind, 
+so that in the future we may add to this project, such as with a game-review system or a computer AI to play against. This mindset helped with adding
+functionality which was not initially planned.
+
+<BlogImage src={ChessSetup} alt="Screenshot of our chess game's GUI. The pieces are in their initial positions." />
+
+The game begins with each piece in their respective position, white to move. All legal moves have been implemented into the game, including castling,
+pawn promotion, and en passant. To move, click on a tile containing your piece, then click on a destination tile. If the move is valid, the piece will move,
+and the other player will have a chance to move. This continues until either no legal moves are possible, a player resigns or a draw is agreed upon, 
+or a special draw condition is reached. These special draw conditions include [threefold repetition](https://www.chess.com/terms/draw-chess#threefold-repetition) and the [fifty move rule](https://www.chess.com/terms/draw-chess#fifty-move-rule). 
+
+<BlogImage src={ChessGame} alt="Screenshot of our chess game's GUI. The game is in-progress." />
+
+Some of the features I was responsible for throughout the project include check, mate, and stalemate detection, saving & loading, our testing system, 
+draw detection, and maintaining the GitHub repo. I also worked on move validation, system design, team organisation, and class implementation. Lots of -ations, apparently.
+Being responsible for these features meant writing efficient and maintainable code, and writing the test cases for them. I also had to ensure they
+worked smoothly with other aspects of the program, and implementing requested changes from my teammates. This was especially important in the testing system, 
+where ease-of-use was essential for ensuring the program worked.
+
+<BlogImage src={Checkmate} alt="Screenshot of our chess game's GUI. White has just won by checkmate." />
+
+---
+
+If you want to check it out for yourself, [follow the instructions here](https://github.com/mortonjack/chess-oop 'Chess Repo').
+
+---

@@ -1,9 +1,9 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Footer from "@components/Footer.astro";
-import Counter from "@components/Counter.astro";
-import counter from "@content/counter.json";
-import { homepage } from "@content/homepage";
+//import Counter from "@components/Counter.astro";
+//import counter from "@content/counter.json";
+import { homepage } from "@content/homepage"; 
 import Features from "@components/Features.astro";
 ---
 
@@ -14,7 +14,11 @@ import Features from "@components/Features.astro";
       the University of Adelaide. I use they/them pronouns. Check out some of my projects below!
     </p>
   </section>
-  {homepage.map((homepage) => <Features title={homepage.title} icon={homepage.icon} content={homepage.content} />)}
+  {homepage.map((homepage) => 
+    <a class="col-span-3 flex flex-col gap-2 sm:gap-4 p-5 my-2 hover:dark:bg-zinc-800 hover:bg-zinc-200 rounded-lg" href={homepage.link}>
+      <Features title={homepage.title} icon={homepage.icon} content={homepage.content}/>
+    </a>
+  )}
   <!-- <section class="py-20 sm:flex sm:items-center sm:justify-evenly text-center sm:text-left">
     {
       (

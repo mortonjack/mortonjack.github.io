@@ -11,10 +11,10 @@ export interface Props {
 }
 
 const defaultMeta = {
-  title: "NoFuss Astro",
-  description: "No fuss Astro Template for Landing, Blog and Docs page. No complicated design and setup, just start editing.",
+  title: "Jack Morton",
+  description: "Jack Morton's Portfolio Website.",
   image: "/banner.png",
-  imageAlt: "Mountain Logo with NoFuss",
+  imageAlt: "Mountain Logo",
 };
 
 const { title = defaultMeta.title, description = defaultMeta.description, heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } = Astro.props as Props;
@@ -25,7 +25,7 @@ const classBody =
 ---
 
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-AU">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -42,7 +42,7 @@ const classBody =
     <meta property="og:image" content={heroImage} />
     <meta property="og:image:alt" content={imageAlt} />
     <meta property="og:site_name" content="NoFuss Astro" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_AU" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta name="twitter:site" content="@lancerossdev" />
@@ -52,7 +52,7 @@ const classBody =
     <meta property="twitter:image" content={heroImage} />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="follow, index" />
-    <meta name="author" content="Lance Ross" />
+    <meta name="author" content="Jack Morton" />
     <script is:inline>
       const primaryColorScheme = "none";
       const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
