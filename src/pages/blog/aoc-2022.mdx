@@ -1,0 +1,59 @@
+---
+title: Advent of Code 2022
+description: "An overview of my experience participating in Advent of Code, 2022"
+pubDate: January 30, 2023
+---
+import BlogImage from "@components/BlogImage.astro"
+import AoCBase from "@images/aocbase.png"
+import DayOne from "@images/aocdayone.png"
+import Day17 from "@images/aocday17.png"
+import Victory from "@images/aoc2022victory.png"
+
+For those who don't know, Advent of Code is an annual event held during the first 25 days of December. 
+You follow a christmas-themed story where each puzzle is one step along the journey. 
+Every day, you are provided with a new puzzle containing two parts, and a unique input file. The goal is to extract your answer from the input file. 
+The first part usually provides a simpler problem, and the second part adds a twist to it- so maybe part one wants you to find the shortest path
+up a mountain from a specific point, and part two wants you to find the shortest path up a mountain from any given point on the ground.
+They tend to become more difficult as time moves on. As you complete each days puzzle, the ASCII art on the homepage starts to reveal itself.
+
+<BlogImage src={AoCBase} alt="The home page of Advent of Code 2022, with all puzzles incomplete." />
+
+In late November, I started a study program called RSP (Ravi's Study Program), and was preparing for my interview to promote from Beginner to Novice.
+The beginner phase involved me studying a lot of theory - namely, reading the Algorithm Design Manual, and implementing some common data structures.
+I heard Ravi mention Advent of Code as being good practice for parsing input from a file. 
+I had some experience there from [developing the save/load system of a chess game](/projects/Chess), but I wanted more practice, plus I'd be able to
+test my newfound knowledge of algorithms & data structures. When December rolled around, I tried out the first puzzle. Seems pretty easy, find the 
+largest item in a list!
+
+<BlogImage src={DayOne} alt="The home page of Advent of Code 2022, with all puzzles incomplete." />
+
+*Well,* I thought, *it might be a bit overkill, but I may as well use this to practice implementing a max heap*. This made the second question easy,
+when I had to find the top 3 highest numbers. [If you look at my code](https://github.com/mortonjack/adventofcode/blob/main/2022/day1/findtop3.cpp), 
+you'll see [how quickly I changed](https://github.com/mortonjack/adventofcode/blob/main/2022/day25/puzzle1.cpp). I was implementing this from scratch, not
+even using vectors or anything from the STL. I barely had any experience there, that was for me to learn once I promoted to Novice. 
+
+After I finished the first day, I thought, _that was fun! I can use this to practice what I'm learning, on top of gaining experience with
+parsing input from files. I'm going to set myself a challenge to complete each day's puzzle as they come out. How hard can it be?_
+
+As it turns out, it can be very hard.
+
+<BlogImage src={Day17} alt="Git commit history of my day 17 submission. The title of the most recent commit reads 'day 17 part 2 1 MINUTE BEFORE MIDNIGHT git status!'" />
+
+Days 16, 17, and 22 hold a special place of hatred in my heart. Well, I feel pretty awesome having completed them, but god damn were they difficult!
+I was woefully unprepared for advent of code, but I stubbornly refused to give up. Despite the hours of banging my head against a wall trying to come up with a solution, 
+or the countless times I had no idea for the life of me why my answer was incorrect, I was right about one thing: it _was_ fun. And that experience
+really taught me a lot. I honestly think it was one of the most valuable parts of RSP for me. 
+
+Most people weren't able to participate, but I took the advice of my mentor Devansh and started the theory phase early. Being one of the first people to
+promote to Novice, it gave me a lot of 'extra' study time I could spend throughout December on whatever I thought was valuable. I'm definitely not doing this again, 
+it's just a combination of luck and forethought that allowed me to have this opportunity, but I'm really glad I had it.
+
+<BlogImage src={Victory} alt="The home page of Advent of Code 2022, with all puzzles complete. The ASCII art reveals itself, now in colour. A rainbow array of hot air balloons fly across the top of the screen." />
+
+If you'd like to participate, you can [go back to previous years at any time and attempt their puzzles](https://www.adventofcode.com/)! 
+I recommend giving it a go with friends, whether by setting up a private leaderboard to compete with each other, 
+or working cooperatively to create the best solutions you can.
+You can also [view my solutions in my GitHub repo](https://github.com/mortonjack/adventofcode/).
+Studying other people's solutions is a fantastic way to learn, you can find many more online. Have fun!
+
+---
