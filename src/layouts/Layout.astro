@@ -14,7 +14,7 @@ const defaultMeta = {
   title: "Jack Morton",
   description: "Jack Morton's Portfolio Website.",
   image: "/banner.png",
-  imageAlt: "Mountain Logo",
+  imageAlt: "Jack Morton with mountain logo",
 };
 
 const { title = defaultMeta.title, description = defaultMeta.description, heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } = Astro.props as Props;
@@ -41,7 +41,7 @@ const classBody =
     <meta property="og:description" content={description} />
     <meta property="og:image" content={heroImage} />
     <meta property="og:image:alt" content={imageAlt} />
-    <meta property="og:site_name" content="NoFuss Astro" />
+    <meta property="og:site_name" content="Jack Morton" />
     <meta property="og:locale" content="en_AU" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
