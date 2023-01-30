@@ -11,7 +11,7 @@ import astroLayouts from "astro-layouts";
 // https://astro.build/config
 export default defineConfig({
   site: "https://mortonjack.github.io",
-  base: "/portfolio-website-i",
+  base: "/",
   markdown: {
     shikiConfig: {
       theme: "dracula"
