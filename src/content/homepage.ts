@@ -24,4 +24,12 @@ export const homepage = [
     icon: "ph:asterisk-simple",
     link: "blog/aoc-2022"
   },
+  {
+    title: "Minesweeper (MATLAB)",
+    content: "Created a console-based minesweeper game in MATLAB. Features include automatic image \
+    generation of the gameboard after a win or loss, depth-first search after revealing a 0 tile \
+    to reveal all adjacent tiles, saving & loading, and custom difficulties.",
+    icon: "mdi:mine",
+    link: "projects/Minesweeper"
+  }
 ];
