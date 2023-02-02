@@ -1,0 +1,36 @@
+--- 
+title: Minesweeper
+description: "A console-based minesweeper app developed in MATLAB"
+pubDate: April 2022
+sortDate: April 1, 2022
+---
+import BlogImage from "@components/BlogImage.astro"
+import Start from "@images/minesweeperStart.png"
+import Lose from "@images/minesweeperLose.png"
+import Zeros from "@images/minesweeperZeros.png"
+import Board from "@images/minesweeperBoard.png"
+
+In my first semester of University, I developed a minesweeper program for my MATLAB & C course. It is console-based and prints instructions for the 
+user to follow. It contains an intuitive design with lots of input validation to ensure the game runs smoothly. 
+
+<BlogImage src={Start} alt="Screenshot of the console, asking the user to start a new game, and generating a fresh board." />
+
+The program generates a random minesweeper grid based off customisable input parameters. It can also load a save file. Each move, you have the 
+option to reveal, flag, or unflag a tile, or to save and exit the game. The goal is to reveal all tiles which aren't mines. 
+When you reveal a tile, it displays the number of adjacent mines. 
+
+<BlogImage src={Lose} alt="Screenshot of the console, after revealing a mind. A message was displayed, 'You lose!', and a prompt appears to play again." />
+
+If there are no adjacent mines, a recursive depth-first search function will automatically reveal all adjacent zeros, and their surrounding tiles.
+
+<BlogImage src={Zeros} alt="Screenshot of the console, showing a user select row 5 column 1 to reveal, which had no adjacent mines, and revealed all adjacent tiles as wel." />
+
+At the end of the game, an image is automatically generated displaying the board so you can share the game you just played.
+
+<BlogImage src={Board} alt="Pixel art of the full board, with all cells revealed. One mine is highlighted in red." />
+
+--- 
+
+[Check it out on GitHub](https://github.com/mortonjack/matlab-minesweeper 'Minesweeper Repo').
+
+---
