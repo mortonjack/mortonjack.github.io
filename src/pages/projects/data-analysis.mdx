@@ -1,0 +1,41 @@
+--- 
+title: Data Analysis
+description: "Investigating the correlation between price and playtime of games on the steam store"
+pubDate: August 2022 - September 2022
+sortDate: August 1, 2022
+---
+import BlogImage from "@components/BlogImage.astro"
+import Graph from "@images/dagraph1.png"
+import Presentation from "@images/dapresentation.png"
+
+This was my first introduction to data analysis, conducted for my research course at uni. I used pandas, seaborn, numpy, and matplotlib
+to investigate the correlation between a video game's price and its playtime. I was tasked with coming up with a topic to research, 
+finding usable data to investigate the question, creating a presentation to explain the topic and recieve feedback, and creating a final
+presentation & report to present my findings. My hypothesis stated that the higher the price of a video game, the less time on average
+would be spent playing the game. 
+
+<BlogImage src={Presentation} alt="A slide from my final presentation, showing the correlation between different average player proportion
+and price. It reads 'Pearson Correlation Coefficient of 0.02. Weak correlation. Becomes stronger positive correlation through basic filtering." />
+
+To choose my topic, I came up with different ideas of mine and looked for relevant datasets. I also made sure the topic was simple enough
+that I could complete it with no background experience in data analysis. The biggest issue I faced was getting the datasets to work together
+properly, as they were formatted quite differently and I had to match up the relevant info (playercount & price) across datasets. Once the
+datasets were properly integrated, I created visualisations displaying the correlation in different relevant formats. 
+
+<BlogImage src={Graph} alt="Joint plot of the average owner estimate, with average player proportion on the y axis, 
+and price on the x axis. The datapoints cluster around the bottom left. No correlation appears." />
+
+No correlation was found, and I was unable to disprove my null hypothesis.
+This is in part due to an incomplete dataset. Although I was careful to make sure I had a large sample
+size and relevant information, I hadn't yet figured out the calculations that would need to be conducted to find the correlation. My datasets
+contained average player count at any given time, and the price of each game. I also needed to know the total sales number of that game on steam,
+which in the end I was unable to find, and it was too late to switch topics. Another gap in knowledge was the price dataset only reflecting
+one point in time, which limited the amount of player count data I could use. The correlation that did appear was positive, and I estimated that
+having a complete dataset would also be unable to disprove my null hypothesis. In my final report, I discussed these issues, and what would be
+needed for effective further study.
+
+--- 
+
+[Check it out on GitHub](https://github.com/mortonjack/Data-Analysis 'Data analysis repo') to see how the data was analysed.
+
+---
