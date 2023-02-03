@@ -1,0 +1,36 @@
+--- 
+title: Anti-Cheat Literature Review
+description: "An analysis of proposed anti-cheat methods for first person shooters."
+pubDate: September 2022 - October 2022
+sortDate: September 1, 2022
+---
+import BlogImage from "@components/BlogImage.astro"
+import Slide from "@images/clientVSserver.png"
+
+This project involved creating two presentations and a report on a current challenge in computer science.
+I analysed anti-cheat methods in first-person shooters, investigating their efficacy and security.
+My presentations were aimed at explaining the necessary concepts to an unfamiliar audience, reviewing 
+existing literature on the subject, and proposing my own solution to the challenge.
+
+Initially motivated by investigating the security risks of kernel-level anti-cheat, I settled on a holistic report which also took efficacy into account,
+to be more reflective of the literature. The papers I reviewed mostly took the risk of kernel-level anti-cheat for granted, as well as their efficacy,
+and discussed potential server-side alternatives based on deep-learning. 
+Two theses I read went into 100 pages of detail on the topic, and brought up concerns about future-proofing client side anti cheat. 
+
+<BlogImage src={Slide} alt="A slide portraying the difference between a game conducting battles on the client-side vs the server-side.
+A cheater is able to modify a packet on the client-side game to change the battle result, before sending it back to the server." />
+
+Based on my reading, I argued the following in my report.
+Client-side anti-cheat puts game devs and cheat devs on the same playing field, in an arms race to produce the better software. 
+Ultimately, the cheater has control over their machine, and will always be able to find a way around client-side anti-cheat. 
+Server-side anti-cheat will be necessary in the future, and also avoids the security issues posed by client-side anti-cheats.
+
+I discussed different existing and proposed methods for developing server-side anti-cheat, such as the deep learning approaches
+put forth by most papers, and more creative solutions such as cloud gaming. I also proposed my own solution based on CS:GO's VACNET, 
+and put all of this into a technical report on the topic and a presentation to my class.
+
+---
+
+This was the second project I conducted for my Grand Challenges in Computer Science course in 2022. See the first project [here](/projects/data-analysis).
+
+---
