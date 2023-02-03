@@ -5,7 +5,7 @@ export const homepage = [
     much of the backend, such as check detection, mate detection, draw detection, the save/load system, \
     the testing system, and move validation. The GUI was made with SFML.",
     icon: "icon-park-outline:chess-one",
-    link: "projects/Chess"
+    link: "projects/chess"
   },
   {
     title: "Sudoku App (Kotlin)",
@@ -14,7 +14,7 @@ export const homepage = [
     one valid solution. It also contains quality-of-life features such as cell \
     highlighting and note auto-clear.",
     icon: "ic:sharp-grid-on",
-    link: "projects/Sudoku"
+    link: "projects/sudoku"
   },
   {
     title: "Advent of Code 2022 (C++)",
@@ -30,6 +30,6 @@ export const homepage = [
     generation of the gameboard after a win or loss, depth-first search after revealing a 0 tile \
     to reveal all adjacent tiles, saving & loading, and custom difficulties.",
     icon: "mdi:mine",
-    link: "projects/Minesweeper"
+    link: "projects/minesweeper"
   }
 ];
