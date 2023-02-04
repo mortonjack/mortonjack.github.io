@@ -1,6 +1,6 @@
 ---
 title: Hello, World!
-description: "My first blog post."
+description: "My first blog post"
 pubDate: January 27, 2023
 ---
 import BlogImage from "@components/BlogImage.astro"
@@ -26,7 +26,8 @@ really drove me.
 
 <BlogImage src={SudokuSmall} alt="Screenshot of my Sudoku Android App, showing a game-in-progress." />
 
-I might write up a blog post explaining my process later, but the short version is this: use a fast solving algorithm to generate a complete board. 
+[I might write up a blog post explaining my process later](/blog/generating-sudokus), 
+but the short version is this: use a fast solving algorithm to generate a complete board. 
 Then, randomly remove tiles, and use the same solving algorithm to ensure that at each point, only 1 solution exists. My current process is very fast,
 and I'm judging difficulty based on the amount of tiles given at the start of the board, but I wish to improve this. I'm not convinced that the
 amount of tiles remaining is a great indicator of difficulty, so I'm working on an improved system to create better games. That's where my project is
