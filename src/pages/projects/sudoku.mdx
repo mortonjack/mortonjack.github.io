@@ -10,13 +10,18 @@ import Sudoku from "@images/sudoku_small.png"
 I'm currently developing a Sudoku app for android. This is my first experience with android app development & Kotlin, my aim is to step outside
 my comfort zone and broaden my experiences. I'm also intrigued by the generation of sudoku boards. 
 
-<BlogImage src={Sudoku} alt="Screenshot of my Sudoku Android App, showing a game-in-progress." />
-
 The app generates a completed sudoku board using an efficient solving algorithm. This algorithm uses backtracking to identify the first cell with the
 smallest number of candidates, then attempts to fill it in with each of its candidates in a random order. Afterwards, it removes a given number of cells
-based on the selected difficulty, and uses the same solving algorithm to ensure there are no new valid solutions. It also contains notes, cell highlighting, 
-note auto-fill & note auto-clear. I'm currently working on an "undo" button, and a better method for generating sudokus, which bases difficulty off
-the techniques required to solve the puzzle, rather than the number of cells removed.
+based on the selected difficulty, and uses the same solving algorithm to ensure there are no new valid solutions. 
+
+<BlogImage src={Sudoku} alt="Screenshot of my Sudoku Android App, showing a game-in-progress." />
+
+The game keeps a move stack, so that the player can undo their most recent moves. Each element in the stack also contains information about any notes which
+were automatically removed, or added via the note auto-fill button. To avoid memory leaks, it is implemented via a deque, 
+and automatically pops the earliest move after the stack reaches a certain size.
+
+I've started working on a [better method for generating sudokus](/blog/generating-sudokus), which bases difficulty off the techniques required to solve the puzzle, 
+rather than the number of cells removed.
 
 --- 
 
